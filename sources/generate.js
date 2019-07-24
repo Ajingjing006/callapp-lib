@@ -99,3 +99,9 @@ export function generateYingYongBao(config, options) {
   // 支持 AppLink
   return `${options.yingyongbao}&android_schema=${encodeURIComponent(url)}`;
 }
+
+export function generateYingYongBaoIOS(config, options) {
+  const url = generateScheme(config, options);
+  // 支持 AppLink
+  return `${options.yingyongbao}&ios_scheme=${encodeURIComponent(url)}`;
+}
